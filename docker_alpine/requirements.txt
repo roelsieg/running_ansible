@@ -1,0 +1,24 @@
+# Needed until jinja 2.11 is released see: https://github.com/ansible/ansible/issues/65981
+# pinned on: https://github.com/pallets/jinja/commit/9ff27f64a92171c912e403bd66c392ec1a70533a
+https://github.com/pallets/jinja/archive/9ff27f64a92171c912e403bd66c392ec1a70533a.zip
+
+# Basics
+ansible == 2.9.6
+
+# Required for Ansible ip filter
+netaddr == 0.7.19
+# Required for Ansible json_query filter
+jmespath == 0.9.4
+
+# WinRM client
+pywinrm[credssp] == 0.4.1
+# Netconf client 
+ncclient == 0.6.7
+# VMware_guest module
+PyVmomi == 6.7.3
+# VCloud module
+pyvcloud == 21.0.0
+# FortiOS module
+fortiosapi == 1.0.1
+# AWS S3 module
+boto3 == 1.11.7
