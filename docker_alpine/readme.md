@@ -15,9 +15,9 @@ Execute the following powershell command to enable Hyper -v
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
 ```
 
-A system restart is required to make the docker 
+A system restart is required to make the docker work wth Hyper-v
 
-### Windows 
+## Running the Docker
 
 To build this image from the directory it is in use
 
