@@ -1,4 +1,4 @@
-## Dependencies
+## Dependencies on windows
 
 Install docker and git with Chocolatey:
 
@@ -19,23 +19,27 @@ A system restart is required to make the docker
 
 ### Windows 
 
-
 To build this image from the directory it is in use
 
 ```
-docker build -t ansible .
+docker build -t docker_ansible .
 ```
 
-To start the image
+To start the image without 'ENTRYPOINT' in the Dockerfile
 
 ```
-docker run --rm -it --name "ansible" -v ${PWD}:/ansible/playbooks ansible
+docker run --rm -it --name "ansible" -v ${PWD}:/ansible/playbooks docker_ansible
 ```
 
-
+Without the Entrypoint
 From the CLI of the container run the playbook
 
 ```
-/root/.local/bin/ansible /ansible/playbooks/playbook.yml
+ansible-playbook playbook.yml
 ```
-TODO TESTING WITH THE ENTRY POINT
+
+Usage with the 'ENTRYPOINT' in the Dockerfile
+
+```
+docker run --rm -it --name "ansible" -v ${PWD}:/ansible/playbooks docker_ansible playbook.yml
+```
