@@ -35,14 +35,14 @@ RUN set -xe \
 
 RUN mkdir -p /ansible/playbooks
 
-WORKDIR /ansible/playbooks
+# WORKDIR /ansible/playbooks
 
-ENV ANSIBLE_GATHERING smart
-ENV ANSIBLE_HOST_KEY_CHECKING false
-ENV ANSIBLE_RETRY_FILES_ENABLED false
-ENV ANSIBLE_ROLES_PATH /ansible/playbooks/roles
-ENV ANSIBLE_SSH_PIPELINING True
-ENV PATH /ansible/bin:$PATH
-ENV PYTHONPATH /ansible/lib
+# ENV ANSIBLE_GATHERING smart
+# ENV ANSIBLE_HOST_KEY_CHECKING false
+# ENV ANSIBLE_RETRY_FILES_ENABLED false
+# ENV ANSIBLE_ROLES_PATH /ansible/playbooks/roles
+# ENV ANSIBLE_SSH_PIPELINING True
+# ENV PATH /ansible/bin:$PATH
+# ENV PYTHONPATH /ansible/lib
 
-ENTRYPOINT ["ansible-playbook"]
+# ENTRYPOINT ["ansible-playbook"]
