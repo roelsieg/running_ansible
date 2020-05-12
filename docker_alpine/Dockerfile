@@ -35,7 +35,9 @@ RUN set -xe \
 
 RUN mkdir -p /ansible/playbooks
 
-# WORKDIR /ansible/playbooks
+ENV PATH="/root/.local/bin/:${PATH}"
+
+WORKDIR /ansible/playbooks
 
 # ENV ANSIBLE_GATHERING smart
 # ENV ANSIBLE_HOST_KEY_CHECKING false
