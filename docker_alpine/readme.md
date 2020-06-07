@@ -43,3 +43,10 @@ Usage with the 'ENTRYPOINT' in the Dockerfile
 ```
 docker run --rm -it --name "ansible" -v ${PWD}:/ansible/playbooks docker_ansible playbook.yml
 ```
+
+## Usefull docker commands
+
+Remove builder unused images 'docker system prune' 
+and it's more wrecking-ball cousin with all option 'docker system prune -a'
+
+List the images 'docker image ls'
