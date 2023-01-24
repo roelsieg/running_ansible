@@ -3,7 +3,7 @@
 https://github.com/pallets/jinja/archive/9ff27f64a92171c912e403bd66c392ec1a70533a.zip
 
 # Basics
-ansible == 2.9.6
+ansible == 7.0.0
 
 # Required for Ansible ip filter
 netaddr == 0.7.19
